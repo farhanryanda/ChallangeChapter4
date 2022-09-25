@@ -12,8 +12,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.farhanryanda.challangechapter4.R
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import com.farhanryanda.challangechapter4.adapter.NoteAdapter
 import com.farhanryanda.challangechapter4.databinding.FragmentHomeBinding
 import com.farhanryanda.challangechapter4.viewmodel.NoteViewModel

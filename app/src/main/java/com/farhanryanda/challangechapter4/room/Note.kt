@@ -1,4 +1,4 @@
-package com.farhanryanda.challangechapter4.Room
+package com.farhanryanda.challangechapter4.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

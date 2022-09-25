@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.farhanryanda.challangechapter4.R
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import com.farhanryanda.challangechapter4.databinding.FragmentAddNoteBinding
 import com.farhanryanda.challangechapter4.viewmodel.NoteViewModel
 import kotlinx.coroutines.GlobalScope

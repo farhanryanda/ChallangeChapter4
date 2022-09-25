@@ -1,4 +1,4 @@
-package com.farhanryanda.challangechapter4.Room
+package com.farhanryanda.challangechapter4.room
 
 import android.content.Context
 import androidx.room.Database

@@ -3,8 +3,8 @@ package com.farhanryanda.challangechapter4.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 

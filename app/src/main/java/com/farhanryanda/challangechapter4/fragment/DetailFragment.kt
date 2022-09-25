@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import com.farhanryanda.challangechapter4.databinding.FragmentDetailBinding
 
 

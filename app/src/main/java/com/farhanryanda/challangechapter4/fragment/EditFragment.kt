@@ -9,8 +9,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.farhanryanda.challangechapter4.R
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import com.farhanryanda.challangechapter4.databinding.FragmentEditBinding
 import com.farhanryanda.challangechapter4.viewmodel.NoteViewModel
 import kotlinx.coroutines.GlobalScope

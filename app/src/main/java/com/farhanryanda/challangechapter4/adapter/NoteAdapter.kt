@@ -10,14 +10,13 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.farhanryanda.challangechapter4.MainActivity
 import com.farhanryanda.challangechapter4.R
-import com.farhanryanda.challangechapter4.Room.Note
-import com.farhanryanda.challangechapter4.Room.NoteDatabase
+import com.farhanryanda.challangechapter4.room.Note
+import com.farhanryanda.challangechapter4.room.NoteDatabase
 import com.farhanryanda.challangechapter4.databinding.ItemViewBinding
 import com.farhanryanda.challangechapter4.fragment.HomeFragment
 import com.farhanryanda.challangechapter4.viewmodel.NoteViewModel
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
 import java.util.ArrayList
 
 class NoteAdapter(var listNote : List<Note>): RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
@@ -25,7 +24,9 @@ class NoteAdapter(var listNote : List<Note>): RecyclerView.Adapter<NoteAdapter.V
     lateinit var noteVm : NoteViewModel
 
     class ViewHolder(var binding : ItemViewBinding): RecyclerView.ViewHolder(binding.root) {
-
+        fun bindnote(noteItem: Note) {
+            binding.note = noteItem
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -36,9 +37,8 @@ class NoteAdapter(var listNote : List<Note>): RecyclerView.Adapter<NoteAdapter.V
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         noteVm = ViewModelProvider(holder.itemView.context as AppCompatActivity).get(NoteViewModel::class.java)
 
-        listNote[position].id
-        holder.binding.tvJudul.text = listNote[position].title
-        holder.binding.tvContent.text = listNote[position].content
+        val data = listNote[position]
+        holder.bindnote(data)
         holder.binding.btnDelete.setOnClickListener{
             DBNote = NoteDatabase.getInstance(it.context)
 
